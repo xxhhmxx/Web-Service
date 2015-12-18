@@ -1,0 +1,10 @@
+C:\Users\Diep Thien Lan\Documents\Visual Studio 2015\Projects\WebWCF\WcfService\bin\Debug\WcfService.dll.config
+C:\Users\Diep Thien Lan\Documents\Visual Studio 2015\Projects\WebWCF\WcfService\bin\Debug\WcfService.dll
+C:\Users\Diep Thien Lan\Documents\Visual Studio 2015\Projects\WebWCF\WcfService\bin\Debug\WcfService.pdb
+C:\Users\Diep Thien Lan\Documents\Visual Studio 2015\Projects\WebWCF\WcfService\bin\Debug\EntityFramework.dll
+C:\Users\Diep Thien Lan\Documents\Visual Studio 2015\Projects\WebWCF\WcfService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Diep Thien Lan\Documents\Visual Studio 2015\Projects\WebWCF\WcfService\bin\Debug\EntityFramework.xml
+C:\Users\Diep Thien Lan\Documents\Visual Studio 2015\Projects\WebWCF\WcfService\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Diep Thien Lan\Documents\Visual Studio 2015\Projects\WebWCF\WcfService\obj\Debug\WcfService.dll
+C:\Users\Diep Thien Lan\Documents\Visual Studio 2015\Projects\WebWCF\WcfService\obj\Debug\WcfService.pdb
+C:\Users\Diep Thien Lan\Documents\Visual Studio 2015\Projects\WebWCF\WcfService\obj\Debug\WcfService.csprojResolveAssemblyReference.cache

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f3fe5ae2-bb6b-4199-88f5-1ba5801597d8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/WcfService/CT_DHService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="072fb1b2-bb34-44d0-8a7c-6114574829f2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/CT_DHService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="23f3b9f2-88ed-4182-a7ab-42a07aee37fe" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/CT_DHService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="d4c8f327-f7f8-416f-8286-fda6fc7c7d1b" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/CT_DHService/mex" />
+    <MetadataFile FileName="WcfService.EF.xsd" MetadataType="Schema" ID="88035295-0ed9-4d32-9804-d874f424f43c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/CT_DHService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

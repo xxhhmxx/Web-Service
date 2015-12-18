@@ -1,0 +1,79 @@
+﻿@model WebWCF.QuanLyUserServiceReference.KhachHang
+
+@{
+    ViewBag.Title = "Đăng ký";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+   
+}
+
+<h2 style="color:red;font-size:36px">Đăng ký</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div>
+        <table style="font-size:20px;width:500px;height:200px">
+            <tr>
+                <td>@Html.LabelFor(model => model.Ten, "Họ và tên", htmlAttributes: new { @class = "control-label col-md-2" })</td>
+                <td>
+                    @Html.EditorFor(model => model.Ten, new { htmlAttributes = new { @class = "form-control", @style = "font:20px arial;max-width:200px" } })
+                    @Html.ValidationMessageFor(model => model.Ten, "", new { @class = "text-danger" })
+                </td>
+
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.TenDangNhap, "Tên tài khoản", htmlAttributes: new { @class = "control-label col-md-2" })</td>
+                <td>
+                    @Html.EditorFor(model => model.TenDangNhap, new { htmlAttributes = new { @class = "form-control",@style = "font:20px arial;max-width:200px" } })
+                    @Html.ValidationMessageFor(model => model.TenDangNhap, "", new { @class = "text-danger" })
+                </td>
+
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.MatKhau, "Mật khẩu", htmlAttributes: new { @class = "control-label col-md-2" })</td>
+                <td>
+                    @Html.EditorFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control", @type = "password", @style = "font:20px arial;max-width:200px" } })
+                    @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.Email, "Email", htmlAttributes: new { @class = "control-label col-md-2" })
+                </td>
+                <td>
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @style = "font:20px arial;max-width:200px" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </td>
+
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.DiaChi, "Địa chỉ", htmlAttributes: new { @class = "control-label col-md-2" })</td>
+                <td>
+                    @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control", @style = "font:20px arial;max-width:200px" } })
+                    @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+                </td>
+
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.SoDienThoai, "Số điện thoại", htmlAttributes: new { @class = "control-label col-md-2" })</td>
+                <td>
+                    @Html.EditorFor(model => model.SoDienThoai, new { htmlAttributes = new { @class = "form-control", @style = "font:20px arial;max-width:200px" } })
+                    @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
+                </td>
+
+            </tr>
+        </table>
+    </div>
+    <br /><br />
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Đăng ký" class="btn btn-default" style="width:20%;font-size:21px;background-color:azure" />
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Về trang chủ", "../Home/Index")
+</div>

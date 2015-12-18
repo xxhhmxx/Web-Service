@@ -97,6 +97,14 @@ namespace WinForm
             txtTongTien.Text = ddh.TongTien.ToString();
             cbTinhTrang_Sua.SelectedItem = ddh.TinhTrang;
             int madondh = int.Parse(ViewDonHang.CurrentRow.Cells[0].Value.ToString());
+            if(ddh.TinhTrang!="Đã Giao")
+            {
+                btnXoa.Enabled = true;
+            }
+            else
+            {
+                btnXoa.Enabled = false;
+            }
             ct.MaDonDH = madondh;
             HienThiCT_DonHang(ct);
         }

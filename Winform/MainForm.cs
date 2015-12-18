@@ -62,10 +62,10 @@ namespace WinForm
             openform(nhasanxuat);
         }
 
-        private void toolStripButton7_Click(object sender, EventArgs e)
+        private void toolStripButton2_Click_1(object sender, EventArgs e)
         {
-            var khachhang = new QuanLyKhachHang();
-            openform(khachhang);
+            var nhasanxuat = new QuanLyKhachHang();
+            openform(nhasanxuat);
         }
     }
 }

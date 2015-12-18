@@ -1,0 +1,17 @@
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\bin\Release\Winform.exe.config
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\bin\Release\Winform.exe
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\bin\Release\Winform.pdb
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\Winform.csprojResolveAssemblyReference.cache
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\WinForm.Form1.resources
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\WinForm.FrmGioiThieu.resources
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\WinForm.FrmNhaSanXuat.resources
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\WinForm.FrmPhieuNhap.resources
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\WinForm.FrmQuanLyDonHang.resources
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\WinForm.FrmQuanLyKho.resources
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\WinForm.FrmSanPham.resources
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\WinForm.MainForm.resources
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\Winform.Properties.Resources.resources
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\WinForm.QuanLyDonHang.resources
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\Winform.csproj.GenerateResource.Cache
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\Winform.exe
+C:\Users\Diep Thien Lan\documents\visual studio 2015\Projects\WebWCF\Winform\obj\Release\Winform.pdb

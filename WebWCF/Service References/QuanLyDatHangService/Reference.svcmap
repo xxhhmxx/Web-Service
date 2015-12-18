@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="71fcb3b9-7695-4bc8-945e-81ff4f484ef0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/WcfService/DatHangService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="c1d20f2e-2915-434c-99ee-b26e51bf91eb" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/DatHangService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="d285ddcd-6f85-4589-877e-48f030a8c59b" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/DatHangService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="c32c78af-a83c-425c-867a-79ab943d650c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/DatHangService/mex" />
+    <MetadataFile FileName="Service.Models.xsd" MetadataType="Schema" ID="813d8607-994a-4629-ab93-b980dbfd3458" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/DatHangService/mex" />
+    <MetadataFile FileName="WcfService.EF.xsd" MetadataType="Schema" ID="5cd9eba8-6fa4-454d-8b93-00e760f66e6e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/DatHangService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="efe28209-0198-48e4-ac6c-dff72eed428d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/DatHangService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,35 @@
+﻿@model WebWCF.QuanLyUserServiceReference.KhachHang
+
+@{
+    ViewBag.Title = "Thông tin khách hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="detail_info">
+    <table class="table table-hover table-responsive">
+        <tr>
+            <td>Họ và tên:</td>
+            <td>@Html.Label(Model.Ten)</td>
+        </tr>
+        <tr>
+            <td>Tên tài khoản:</td>
+            <td>@Html.Label(Model.Ten)</td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td>@Html.Label(Model.Email)</td>
+        </tr>
+        <tr>
+            <td>Địa chỉ:</td>
+            <td>@Html.Label(Model.DiaChi)</td>
+        </tr>
+        <tr>
+            <td>Số điện thoại</td>
+            <td>@Html.Label(Model.SoDienThoai)</td>
+        </tr>
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Cập nhật", "/Edit", new { id = Model.MaKhachHang }) |
+    @Html.ActionLink("Về trang chủ", "/Home/Index")
+</p>

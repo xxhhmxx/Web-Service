@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="QuanLyDonHang" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/WcfService.EF" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IQuanLyDonHang_HienThiDonDH_InputMessage">
+    <wsdl:part name="parameters" element="tns:HienThiDonDH" />
+  </wsdl:message>
+  <wsdl:message name="IQuanLyDonHang_HienThiDonDH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HienThiDonDHResponse" />
+  </wsdl:message>
+  <wsdl:message name="IQuanLyDonHang_TimKiem_MaDH_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiem_MaDH" />
+  </wsdl:message>
+  <wsdl:message name="IQuanLyDonHang_TimKiem_MaDH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiem_MaDHResponse" />
+  </wsdl:message>
+  <wsdl:message name="IQuanLyDonHang_TimKiem_NgayDat_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiem_NgayDat" />
+  </wsdl:message>
+  <wsdl:message name="IQuanLyDonHang_TimKiem_NgayDat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiem_NgayDatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IQuanLyDonHang_TimKiem_TinhTrang_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiem_TinhTrang" />
+  </wsdl:message>
+  <wsdl:message name="IQuanLyDonHang_TimKiem_TinhTrang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiem_TinhTrangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IQuanLyDonHang_Sua_DH_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_DH" />
+  </wsdl:message>
+  <wsdl:message name="IQuanLyDonHang_Sua_DH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_DHResponse" />
+  </wsdl:message>
+  <wsdl:message name="IQuanLyDonHang_Xoa_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa" />
+  </wsdl:message>
+  <wsdl:message name="IQuanLyDonHang_Xoa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IQuanLyDonHang">
+    <wsdl:operation name="HienThiDonDH">
+      <wsdl:input wsaw:Action="http://tempuri.org/IQuanLyDonHang/HienThiDonDH" message="tns:IQuanLyDonHang_HienThiDonDH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IQuanLyDonHang/HienThiDonDHResponse" message="tns:IQuanLyDonHang_HienThiDonDH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiem_MaDH">
+      <wsdl:input wsaw:Action="http://tempuri.org/IQuanLyDonHang/TimKiem_MaDH" message="tns:IQuanLyDonHang_TimKiem_MaDH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IQuanLyDonHang/TimKiem_MaDHResponse" message="tns:IQuanLyDonHang_TimKiem_MaDH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiem_NgayDat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IQuanLyDonHang/TimKiem_NgayDat" message="tns:IQuanLyDonHang_TimKiem_NgayDat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IQuanLyDonHang/TimKiem_NgayDatResponse" message="tns:IQuanLyDonHang_TimKiem_NgayDat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiem_TinhTrang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IQuanLyDonHang/TimKiem_TinhTrang" message="tns:IQuanLyDonHang_TimKiem_TinhTrang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IQuanLyDonHang/TimKiem_TinhTrangResponse" message="tns:IQuanLyDonHang_TimKiem_TinhTrang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sua_DH">
+      <wsdl:input wsaw:Action="http://tempuri.org/IQuanLyDonHang/Sua_DH" message="tns:IQuanLyDonHang_Sua_DH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IQuanLyDonHang/Sua_DHResponse" message="tns:IQuanLyDonHang_Sua_DH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xoa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IQuanLyDonHang/Xoa" message="tns:IQuanLyDonHang_Xoa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IQuanLyDonHang/XoaResponse" message="tns:IQuanLyDonHang_Xoa_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IQuanLyDonHang" type="tns:IQuanLyDonHang">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HienThiDonDH">
+      <soap:operation soapAction="http://tempuri.org/IQuanLyDonHang/HienThiDonDH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiem_MaDH">
+      <soap:operation soapAction="http://tempuri.org/IQuanLyDonHang/TimKiem_MaDH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiem_NgayDat">
+      <soap:operation soapAction="http://tempuri.org/IQuanLyDonHang/TimKiem_NgayDat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiem_TinhTrang">
+      <soap:operation soapAction="http://tempuri.org/IQuanLyDonHang/TimKiem_TinhTrang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sua_DH">
+      <soap:operation soapAction="http://tempuri.org/IQuanLyDonHang/Sua_DH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xoa">
+      <soap:operation soapAction="http://tempuri.org/IQuanLyDonHang/Xoa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="QuanLyDonHang">
+    <wsdl:port name="BasicHttpBinding_IQuanLyDonHang" binding="tns:BasicHttpBinding_IQuanLyDonHang">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WcfService/QuanLyDonHang/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

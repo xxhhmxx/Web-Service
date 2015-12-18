@@ -1,0 +1,31 @@
+﻿@model WebWCF.QuanLyUserServiceReference.KhachHang
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div>
+        <table class="tab table-responsive" style="height:100px;width:500px;font:24px arial;position:center">
+            <tr>
+                <td>Tài khoản:</td>
+                <td>
+                    @Html.TextBox("username", "", new { @style= "font:24px arial;max-width:200px" })
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu:</td>
+                <td>
+                    @Html.TextBox("password", "", new { @type = "password", @style = "font:24px arial;max-width:200px" })
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <input type="submit" value="Đăng nhập" style="font:22px arial" />&nbsp;&nbsp;
+        <a href="/User/LoginFacebook"><img width="40" src="~/Asset/facebook.png" /></a>
+    </div>
+}

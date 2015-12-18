@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/WcfService.EF" />
+  <xs:element name="HienThiCT_DonDH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfService.EF" minOccurs="0" name="ct" nillable="true" type="q1:CT_DonDH" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HienThiCT_DonDHResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfService.EF" minOccurs="0" name="HienThiCT_DonDHResult" nillable="true" type="q2:ArrayOfCT_DonDH" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Xoa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfService.EF" minOccurs="0" name="ct" nillable="true" type="q3:CT_DonDH" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="XoaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

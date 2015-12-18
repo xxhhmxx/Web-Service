@@ -1,0 +1,124 @@
+﻿@model WebWCF.QuanLyUserServiceReference.KhachHang
+@{
+    ViewBag.Title = "CheckOut";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<WebWCF.QuanLyDatHangService.CartItem> cartItem = (List<WebWCF.QuanLyDatHangService.CartItem>)Session["CartItem"];
+    int? total = 0;
+    int? stt = 0;
+}
+
+@using (Html.BeginForm("CheckOut", "Cart", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div>
+        @if (Session["LogedName"] != null)
+        {
+
+            <table class="table table-striped">
+                <tr>
+                    <td>Họ và tên:</td>
+                    <td>
+                        @Html.TextBoxFor(model => model.Ten, htmlAttributes: new { @id = "ten" })
+                        @Html.ValidationMessageFor(model => model.Ten, "", new { @class = "text-danger" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại:</td>
+                    <td>
+                        @Html.TextBoxFor(model => model.SoDienThoai, htmlAttributes: new { @id = "sdt" })
+                        @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        @Html.TextBoxFor(model => model.Email, htmlAttributes: new { @id = "email" })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ:</td>
+                    <td>
+                        @Html.TextBoxFor(model => model.DiaChi, htmlAttributes: new { @id = "diachi" })
+                        @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+                    </td>
+                </tr>
+            </table>
+        }
+        else
+        {
+            <table>
+                <tr>
+                    <td>Họ và tên:</td>
+                    <td>
+                        @Html.TextBox("ten", null)
+                        @Html.ValidationMessageFor(model => model.Ten)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại:</td>
+                    <td>
+                        @Html.TextBox("sdt", null)
+                        @Html.ValidationMessageFor(model => model.SoDienThoai)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        @Html.TextBox("email", null)
+                        @Html.ValidationMessageFor(model => model.Email)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ:</td>
+                    <td>
+                        @Html.TextBox("diachi", " ")
+                        @Html.ValidationMessageFor(model => model.DiaChi)
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+    <br /><br /><br />
+    <h2>Giỏ hàng</h2>
+    <div>
+        <table style="border-bottom:groove" width="100%">
+            <thead>
+                <tr style="border-bottom:2px double gray;font:bold 20px arial;text-align:center;color:red">
+                    <td>STT</td>
+                    <td>Tên sản phẩm</td>
+                    <td>Hình ảnh</td>
+                    <td>Số lượng</td>
+                    <td>Đơn giá</td>
+                    <td>Thành tiền</td>
+                    <td></td>
+                </tr>
+            </thead>
+            @if (Session["CartItem"] != null)
+            {
+                foreach (var item in cartItem)
+                {
+                    <tr style="text-align:center; border-bottom:1.5px dotted" id="form">
+                        <td>@(stt += 1)</td>
+                        <td>@item.Product.TenSP</td>
+                        <td width="100"><img src="@Url.Content(item.Product.Hinh)" /></td>
+                        <td>@item.Quantity</td>
+                        <td>@item.Product.DonGia VNĐ</td>
+                        <td>@(item.Quantity * item.Product.DonGia) VNĐ</td>
+                        <td><a href="/Cart/RemoveFromCart/remove?idsp=@item.Product.SP_ID&quantity=@item.Quantity">Xoá</a></td>
+
+                    </tr>
+                    <t hidden>@(total += item.Quantity * item.Product.DonGia)</t>
+                }
+            }
+        </table>
+
+    </div>
+    <br />
+    <div style="text-align:right;padding:10px 10px 10px 10px">
+        <t style="font:bold 18px arial">
+            Thành tiền:&nbsp;@Html.TextBox("total", total)<br />
+            <input type="submit" style="font:bold 24px arial;background-color:lawngreen" value="Đặt hàng" class="btn btn-default" />
+    </div>
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b9dcda6c-56a2-494c-8575-e3750c540b4a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/WcfService/QuanLyTonKho/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="ac4509af-1e6b-4193-b81a-01deaf72805c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/QuanLyTonKho/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="b49bfe62-00ba-44c3-8de5-56bd288a0d6a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/QuanLyTonKho/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="883a39e3-a60d-42cb-8a7f-a5576532d7cd" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/QuanLyTonKho/mex" />
+    <MetadataFile FileName="WcfService.EF.xsd" MetadataType="Schema" ID="fe7fe110-b2dc-4271-b84f-b37e7e4aa1b2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfService/QuanLyTonKho/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

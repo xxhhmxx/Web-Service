@@ -1,0 +1,49 @@
+﻿@model List<WebWCF.SanPhamServiceReference.SanPham>
+
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    WebWCF.QuanLyTonKhoServiceReference.QuanLyTonKhoClient quanly = new WebWCF.QuanLyTonKhoServiceReference.QuanLyTonKhoClient();
+}
+
+<div class="section group">
+    @foreach (var item in Model)
+    {
+        if (quanly.TimTheoSPID(item.SP_ID) != null && quanly.TimTheoSPID(item.SP_ID).SoLuongTon > 0)
+        {
+            <div>
+                <div class="grid_1_of_4 images_1_of_4">
+                    <a href="/Home/Detail/@item.SP_ID"><img src="@Url.Content(item.Hinh)" alt="" /></a>
+                    <h2>@item.TenSP</h2>
+                    <div class="price-details">
+                        <div class="price-number">
+                            <p><span class="rupees">@item.DonGia VNĐ</span></p>
+                        </div>
+                        <div class="add-cart">
+                            <h4><a href="/Cart/AddItem/them-san-pham?productId=@item.SP_ID&quantity=1" onclick="return alert('Thêm sản phẩm thành công')">Thêm vào giỏ hàng</a></h4>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div>
+                <div class="grid_1_of_4 images_1_of_4">
+                    <a href="/Home/Detail/@item.SP_ID"><img src="@Url.Content(item.Hinh)" alt="" /></a>
+                    <h2>@item.TenSP</h2>
+                    <div class="price-details">
+                        <div class="price-number">
+                            <p><span class="rupees">@item.DonGia VNĐ</span></p>
+                        </div>
+                        <div class="add-cart">
+                            <h4><a>&nbsp;&nbsp;&nbsp;Hết hàng&nbsp;&nbsp;&nbsp;</a></h4>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
